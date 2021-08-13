@@ -1,0 +1,25 @@
+Source: golang-github-mdlayher-genetlink
+Section: devel
+Priority: optional
+Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
+Build-Depends: debhelper (>= 12),
+               dh-golang,
+               golang-any,
+               golang-github-google-go-cmp-dev,
+               golang-github-mdlayher-netlink-dev,
+               golang-golang-x-net-dev,
+               golang-golang-x-sys-dev
+Standards-Version: 4.2.1
+Homepage: https://github.com/mdlayher/genetlink
+XS-Go-Import-Path: github.com/mdlayher/genetlink
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-github-mdlayher-genetlink-dev
+Architecture: all
+Depends: ${misc:Depends},
+         golang-github-google-go-cmp-dev,
+         golang-github-mdlayher-netlink-dev,
+         golang-golang-x-net-dev,
+         golang-golang-x-sys-dev
+Description: Package genetlink implements generic netlink interactions and data types
+ Generic netlink interactions and data types as Go module.
